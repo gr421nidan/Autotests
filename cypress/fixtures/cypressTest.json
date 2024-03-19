@@ -10,5 +10,9 @@
   "existent_name":"Дарья",
   "existent_patronymic": "Андреевна",
   "existent_search": "починить",
-  "existent_range": "2500"
+  "existent_range": "2500",
+
+  "existent_other_login": "testerStudentDari",
+  "existent_other_email": "example@gmail.com",
+  "existent_other_password" : "Password2"
 }
