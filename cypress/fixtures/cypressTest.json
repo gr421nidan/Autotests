@@ -1,0 +1,13 @@
+{
+  "main_url": "https://dev.profteam.su/",
+  "existent_login": "testerStudentMee",
+  "none_existent_login": "test252test",
+  "existent_email": "testerStudentMee@example.com",
+  "none_existent_email": "testerStudentexampleMee.com",
+  "existent_password" : "Password1",
+  "none_existent_password": "Test",
+  "existent_surname": "Никушкина",
+  "existent_name":"Дарья",
+  "existent_patronymic": "Андреевна"
+
+}
