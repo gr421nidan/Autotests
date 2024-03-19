@@ -14,5 +14,11 @@
 
   "existent_other_login": "testerStudentDari",
   "existent_other_email": "example@gmail.com",
-  "existent_other_password" : "Password2"
+  "existent_other_password" : "Password2",
+
+  "institute": "ТПУ",
+  "speciality": "15.02.10 Мехатроника и мобильная робототехника (по отраслям)",
+  "qualification": "Бакалавр",
+  "start_year": "2022",
+  "end_year": "2025"
 }
