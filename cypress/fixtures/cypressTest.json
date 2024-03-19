@@ -8,6 +8,7 @@
   "none_existent_password": "Test",
   "existent_surname": "Никушкина",
   "existent_name":"Дарья",
-  "existent_patronymic": "Андреевна"
-
+  "existent_patronymic": "Андреевна",
+  "existent_search": "починить",
+  "existent_range": "2500"
 }
