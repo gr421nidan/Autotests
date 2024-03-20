@@ -12,7 +12,7 @@ describe('Add role student Tests', ()=>{
             cy.get('.form-input--text').type(data.existent_login).should('have.value', data.existent_login)
             cy.get('.form-input--password').type(data.existent_password).should('have.value', data.existent_password)
             cy.get(':nth-child(3) > .button').should('be.visible').click()
-
+            cy.wait(2000)
             cy.log('Проверка что перешли в личный кабинет')
             cy.url().should('include','account/main')
             //cy.log('Подтвердить почту')
@@ -21,6 +21,7 @@ describe('Add role student Tests', ()=>{
             cy.log('Выбрать роль студента')
             cy.get('.page-nav__role-block > .button').should('be.visible').click()
             cy.get('.select-role-form > :nth-child(3)').should('be.visible').click()
+
         })
     })
 
