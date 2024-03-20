@@ -19,8 +19,8 @@
   "qualification": "Бакалавр",
   "start_year": "2022",
   "end_year": "2025",
-  "name_oy": "Привет",
-  "address_oy": "Тут",
+  "name_co": "Привет",
+  "address_co": "Тут",
   "desc": "Пупупу",
   "none_existent_address": "%*"
 }

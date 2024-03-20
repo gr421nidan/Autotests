@@ -1,5 +1,5 @@
-describe('Add role oy Tests', ()=>{
-    it('positive add role oy test', ()=>{
+describe('Add role co Tests', ()=>{
+    it('positive add role co test', ()=>{
         cy.fixture('cypressTest').then(data=>{
             cy.log('Переход на сайт')
             cy.visit(data.main_url)
@@ -24,8 +24,8 @@ describe('Add role oy Tests', ()=>{
             cy.get('.variants-company > :nth-child(2)').should('be.visible').click()
 
             cy.log('Заполнить форму:')
-            cy.get(':nth-child(1) > .form-control--medium > .form-input--text').type(data.name_oy).should('have.value', data.name_oy)
-            cy.get(':nth-child(2) > .form-control--medium > .form-input--text').type(data.address_oy).should('have.value', data.address_oy)
+            cy.get(':nth-child(1) > .form-control--medium > .form-input--text').type(data.name_co).should('have.value', data.name_co)
+            cy.get(':nth-child(2) > .form-control--medium > .form-input--text').type(data.address_co).should('have.value', data.address_co)
             cy.get('.form-area').type(data.desc).should('have.value', data.desc)
             cy.get('.create-company-form__description-block > .button').should('be.visible').click()
 
@@ -39,7 +39,7 @@ describe('Add role oy Tests', ()=>{
 
         })
     })
-    it('negative add role oy test', ()=>{
+    it('negative add role ko test', ()=>{
         cy.fixture('cypressTest').then(data=>{
             cy.log('Переход на сайт')
             cy.visit(data.main_url)
@@ -64,7 +64,7 @@ describe('Add role oy Tests', ()=>{
             cy.get('.variants-company > :nth-child(2)').should('be.visible').click()
 
             cy.log('Заполнить форму:')
-            cy.get(':nth-child(1) > .form-control--medium > .form-input--text').type(data.name_oy).should('have.value', data.name_oy)
+            cy.get(':nth-child(1) > .form-control--medium > .form-input--text').type(data.name_co).should('have.value', data.name_co)
             cy.log('Ввод недействительного адреса')
             cy.get(':nth-child(2) > .form-control--medium > .form-input--text').type(data.none_existent_address).should('have.value', data.none_existent_address)
             cy.log('Проверка что появился элемент сигнализирующий об ошибке')
@@ -75,6 +75,4 @@ describe('Add role oy Tests', ()=>{
             cy.get('.desktop-modal__header > .base-icon').should('be.visible').click()
         })
     })
-
-
 })
