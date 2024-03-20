@@ -69,7 +69,7 @@ describe('Add Application Tests', ()=>{
                 cy.get('.message-student > .button').should('be.visible').click()
 
                 cy.log('Ввод ОУ')
-                cy.get('.desktop-modal__content > .student-form > .choose-institution > :nth-child(1) > [data-v-40f88df4=""] > .search-input > div.search-input__field > .form-input--text').type(data.institute).should('have.value', data.institute)
+                cy.get('.desktop-modal__content > .student-form > .choose-institution > :nth-child(1) > [data-v-40f88df4=""] > .search-input > div.search-input__field > .form-input--text').type(data.existent_oy).should('have.value', data.existent_oy)
                 cy.get('.search-input__item').click()
 
                 cy.log('Ввод специальности')

@@ -7,9 +7,7 @@ describe('View Needs Tests', ()=>{
             cy.log('Использование поиска')
             cy.get('.form-input--text').type(data.existent_search).should('have.value', data.existent_search)
             cy.get('div.search-input__field > .button').should('be.visible').click()
-
             cy.wait(2000)
-
             cy.log('Сбросить фильтр')
             cy.get('.custom-modal-mobile__buttons > .button').should('be.visible').click()
 
@@ -20,13 +18,9 @@ describe('View Needs Tests', ()=>{
             cy.log('Использование фильтра по занятости')
             cy.get('.form-select__selected').should('be.visible').click()
             cy.get('.form-select__items > :nth-child(3)').should('be.visible').click()
-
             cy.wait(2000)
-
             cy.log('Сбросить фильтр')
             cy.get('.custom-modal-mobile__buttons > .button').should('be.visible').click()
         })
     })
-
-
 })

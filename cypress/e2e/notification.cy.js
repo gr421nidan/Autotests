@@ -1,5 +1,3 @@
-
-
 describe('notification Tests', ()=>{
     it('positive notification test', ()=>{
         cy.fixture('cypressTest').then(data=>{
@@ -33,8 +31,6 @@ describe('notification Tests', ()=>{
                     cy.get('.notification-title > .link').should('be.visible').click()
                 }
             })
-
-
         })
     })
 
